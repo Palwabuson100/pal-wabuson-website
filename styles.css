@@ -1543,15 +1543,14 @@ img {
 .footer-marquee {
   width: min(1400px, 100%);
   margin: 0 auto;
-  overflow: hidden;
   padding: 30px 0 50px;
   color: var(--white);
-  font-size: clamp(70px, 17vw, 260px);
+  font-size: clamp(56px, 12vw, 170px);
   font-weight: 900;
   letter-spacing: 0;
-  line-height: 0.85;
+  line-height: 0.9;
   text-transform: uppercase;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .footer-links,
