@@ -1,3 +1,4 @@
+/* ==== Design tokens ==== */
 :root {
   --ink: #080808;
   --paper: #f3f0e8;
@@ -58,6 +59,7 @@ img {
   max-width: 100%;
 }
 
+/* ==== Navigation ==== */
 .site-nav {
   position: fixed;
   inset: 0 0 auto;
@@ -134,7 +136,7 @@ img {
 .menu-toggle {
   display: block;
   width: 52px;
-  height: 42px;
+  height: 44px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -150,6 +152,7 @@ img {
   background: currentColor;
 }
 
+/* ==== Hero ==== */
 .hero {
   order: 0;
   position: relative;
@@ -247,7 +250,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  min-height: 42px;
+  min-height: 44px;
   padding: 11px 14px;
   border: 1px solid rgba(243, 240, 232, 0.28);
   border-radius: 999px;
@@ -350,6 +353,7 @@ img {
   font-size: 34px;
 }
 
+/* ==== Shared section utilities ==== */
 .section {
   padding: clamp(90px, 12vw, 170px) clamp(20px, 4vw, 48px);
 }
@@ -660,6 +664,7 @@ img {
   order: 8;
 }
 
+/* ==== Unovia feature card ==== */
 .feature-card {
   position: relative;
   min-height: clamp(420px, 46vw, 560px);
@@ -768,6 +773,7 @@ img {
   font-size: clamp(24px, 3vw, 44px);
 }
 
+/* ==== Product cards (Amber / Lana / Arthena) ==== */
 .venture-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -887,6 +893,7 @@ img {
   letter-spacing: 0.06em;
 }
 
+/* ==== Buttons ==== */
 .button {
   display: inline-flex;
   align-items: center;
@@ -1000,6 +1007,7 @@ img {
   line-height: 1.6;
 }
 
+/* ==== Ideas grid ==== */
 .idea-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -1493,36 +1501,6 @@ img {
   line-height: 1.55;
 }
 
-.signup {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  max-width: 510px;
-  margin: 38px auto 0;
-}
-
-.signup input {
-  flex: 1;
-  min-width: 220px;
-  border: 1px solid rgba(8, 8, 8, 0.3);
-  border-radius: 999px;
-  background: rgba(8, 8, 8, 0.08);
-  color: var(--ink);
-  font: 500 15px "Archivo", system-ui, sans-serif;
-  outline: none;
-  padding: 16px 24px;
-}
-
-.signup input:focus {
-  border-color: var(--ink);
-  box-shadow: 0 0 0 3px rgba(8, 8, 8, 0.12);
-}
-
-.signup input::placeholder {
-  color: rgba(8, 8, 8, 0.58);
-}
-
 .final-cta {
   text-align: center;
 }
@@ -1533,6 +1511,7 @@ img {
   font-size: clamp(38px, 6vw, 100px);
 }
 
+/* ==== Footer ==== */
 .footer {
   padding: 0 clamp(20px, 4vw, 48px) 60px;
   border-top: 1px solid rgba(243, 240, 232, 0.12);
@@ -1799,6 +1778,7 @@ img {
   color: var(--paper);
 }
 
+/* ==== Journey ==== */
 .journey-section {
   padding-top: clamp(90px, 10vw, 145px);
 }
@@ -1867,6 +1847,7 @@ img {
     url("./assets/brand/real-estate-site.jpg") center 30% / cover;
 }
 
+/* ==== Lions Path community ==== */
 .community-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.8fr);
@@ -1920,6 +1901,7 @@ img {
   font-size: clamp(38px, 4vw, 64px);
 }
 
+/* ==== Global engagement ==== */
 .global-card {
   display: grid;
   grid-template-columns: minmax(0, 0.78fr) minmax(320px, 0.62fr);
@@ -1960,6 +1942,7 @@ img {
   font-size: clamp(46px, 5.5vw, 92px);
 }
 
+/* ==== Responsive: <=1100px ==== */
 @media (max-width: 1100px) {
   .products-section .venture-grid,
   .ideas-section .idea-grid,
@@ -2003,6 +1986,7 @@ img {
   }
 }
 
+/* ==== Responsive: <=760px ==== */
 @media (max-width: 760px) {
   .site-nav {
     mix-blend-mode: normal;
@@ -2215,6 +2199,7 @@ img {
   }
 }
 
+/* ==== Responsive: <=420px ==== */
 @media (max-width: 420px) {
   .section,
   .newsletter {
@@ -2330,6 +2315,7 @@ main > #contact {
   margin-top: clamp(80px, 10vw, 150px);
 }
 
+/* ==== Press features ==== */
 .press-shot-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2375,6 +2361,7 @@ main > #contact {
   transform: scale(1.03);
 }
 
+/* ==== Hall of fame carousel ==== */
 .hall-of-fame {
   margin-top: clamp(80px, 10vw, 150px);
 }
@@ -2424,6 +2411,7 @@ main > #contact {
   transform: scale(1.04);
 }
 
+/* ==== Responsive: press/fame <=760px ==== */
 @media (max-width: 760px) {
   .featured-portals,
   .press-shot-grid {

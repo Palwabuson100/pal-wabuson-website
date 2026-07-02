@@ -209,14 +209,6 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-const signup = document.querySelector(".signup");
-if (signup) {
-  signup.addEventListener("submit", (event) => {
-    event.preventDefault();
-    event.currentTarget.reset();
-  });
-}
-
 const reveals = document.querySelectorAll(".reveal:not(.in)");
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -229,6 +221,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 reveals.forEach((node) => revealObserver.observe(node));
 
 const parallaxNodes = Array.from(document.querySelectorAll("[data-parallax]"));
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 let ticking = false;
 
 const updateParallax = () => {
@@ -242,10 +235,12 @@ const updateParallax = () => {
   ticking = false;
 };
 
-window.addEventListener("scroll", () => {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(updateParallax);
-}, { passive: true });
+if (!prefersReducedMotion.matches) {
+  window.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(updateParallax);
+  }, { passive: true });
+}
 
 updateParallax();
