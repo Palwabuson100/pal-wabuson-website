@@ -1812,6 +1812,22 @@ img {
   transform: scale(1.04);
 }
 
+.featured-tile.self-labeled::before {
+  background:
+    linear-gradient(180deg, rgba(8, 8, 8, 0.05), rgba(8, 8, 8, 0.3)),
+    var(--tile-image) center / cover;
+}
+
+.featured-tile.self-labeled .tile-kicker,
+.featured-tile.self-labeled strong {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .featured-tile.logo-tile::before {
   background:
     linear-gradient(180deg, rgba(8, 8, 8, 0.04), rgba(8, 8, 8, 0.5)),
