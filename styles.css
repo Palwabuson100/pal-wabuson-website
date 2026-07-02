@@ -1068,13 +1068,6 @@ img {
   transform: translate(4px, -4px);
 }
 
-.split {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  gap: clamp(40px, 6vw, 80px);
-  align-items: start;
-}
-
 .talk-list {
   border-top: 1px solid rgba(243, 240, 232, 0.16);
 }
@@ -2000,6 +1993,10 @@ img {
   .global-card,
   .speaking-layout {
     grid-template-columns: 1fr;
+  }
+
+  .speaking-collage-photo.secondary {
+    right: 0;
   }
 
   .journey-card.reverse .journey-media {
