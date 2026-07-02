@@ -7,23 +7,14 @@ const talks = [
   "Creating Technology for African Markets"
 ];
 
-const ideas = [
-  "What Real Estate Taught Me About Building Technology",
-  "Why Growing Businesses Need Better Systems",
-  "The Future of AI Employees",
-  "How Small Teams Can Achieve More",
-  "Reinvention Without Starting Again",
-  "Building Technology for African Markets"
-];
-
 const footerLinks = [
   ["Intro", "#intro"],
-  ["Unovia", "#unovia"],
-  ["Products", "#products"],
-  ["Journey", "#journey"],
+  ["Featured", "#featured"],
+  ["Timeline", "#journey"],
+  ["News", "#news"],
+  ["Media", "#media"],
   ["Speaking", "#speaking"],
   ["Lions Path", "#lions-path"],
-  ["Ideas", "#ideas"],
   ["Contact", "#contact"]
 ];
 
@@ -112,23 +103,12 @@ document.getElementById("talks").innerHTML = talks.map((title, index) => `
   </div>
 `).join("");
 
-document.getElementById("ideas-grid").innerHTML = ideas.map((title, index) => `
-  <a class="idea-card reveal" href="#media" style="--idea-bg: url('./assets/media/pal-${String(index + 9).padStart(2, "0")}.jpg') center / cover">
-    <div class="idea-art" aria-hidden="true"></div>
-    <div class="idea-body">
-      <span class="eyebrow">Idea ${String(index + 1).padStart(2, "0")}</span>
-      <h3>${escapeHtml(title)}</h3>
-      <span class="idea-arrow" aria-hidden="true">-></span>
-    </div>
-  </a>
-`).join("");
+const tileWallGrid = document.getElementById("tile-wall-grid");
 
-const fameTrack = document.getElementById("fame-track");
-
-if (fameTrack) {
-  fameTrack.innerHTML = [...hallImages, ...hallImages].map((src, index) => `
-    <figure class="fame-frame ${index % 7 === 0 ? "tall" : ""}">
-      <img src="${src}" alt="Pal Wabuson hall of fame image ${index + 1}" loading="lazy">
+if (tileWallGrid) {
+  tileWallGrid.innerHTML = hallImages.slice(0, 18).map((src, index) => `
+    <figure class="wall-tile">
+      <img src="${src}" alt="" loading="lazy">
     </figure>
   `).join("");
 }
@@ -244,3 +224,24 @@ if (!prefersReducedMotion.matches) {
 }
 
 updateParallax();
+
+const roleSwap = document.getElementById("role-swap");
+
+if (roleSwap && !prefersReducedMotion.matches) {
+  const roles = [
+    "Entrepreneur",
+    "Founder of Unovia Technologies",
+    "TEDx Speaker",
+    "Convener, Lions Path Initiative"
+  ];
+  let roleIndex = 0;
+
+  setInterval(() => {
+    roleIndex = (roleIndex + 1) % roles.length;
+    roleSwap.classList.add("swapping");
+    setTimeout(() => {
+      roleSwap.textContent = roles[roleIndex];
+      roleSwap.classList.remove("swapping");
+    }, 300);
+  }, 2600);
+}

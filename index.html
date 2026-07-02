@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Bebas+Neue&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css?v=20260701-hero-audio">
+    <link rel="stylesheet" href="./styles.css?v=20260702-sb-style">
 
     <script type="application/ld+json">
     {
@@ -61,9 +61,10 @@
       </button>
       <div class="nav-links" id="nav-links">
         <a class="navlink" href="#intro">Intro</a>
-        <a class="navlink" href="#unovia">Unovia</a>
-        <a class="navlink" href="#products">Products</a>
-        <a class="navlink" href="#journey">Journey</a>
+        <a class="navlink" href="#featured">Featured</a>
+        <a class="navlink" href="#journey">Timeline</a>
+        <a class="navlink" href="#news">News</a>
+        <a class="navlink" href="#media">Media</a>
         <a class="navlink" href="#speaking">Speaking</a>
         <a class="navlink" href="#contact">Contact</a>
       </div>
@@ -81,11 +82,13 @@
           <div class="hero-name-wrap reveal in">
             <p class="eyebrow lime">The Builder</p>
             <h1 class="hero-name">Pal Wabuson</h1>
+            <p class="hero-roles" aria-label="Entrepreneur. Founder of Unovia Technologies. TEDx Speaker. Convener, Lions Path Initiative.">
+              <span class="role-swap" id="role-swap" aria-hidden="true">Entrepreneur</span>
+            </p>
             <p class="hero-statement">I build businesses, systems and ideas for Africa's next chapter.</p>
-            <p class="hero-subcopy">Entrepreneur. Founder of Unovia Technologies. Building at the intersection of business, artificial intelligence and the future of work.</p>
             <div class="button-row centered hero-actions">
               <a class="button button-lime" href="#journey">Explore My Journey <span aria-hidden="true">-></span></a>
-              <a class="button button-outline" href="#products">See What I'm Building</a>
+              <a class="button button-outline" href="#featured">See What I'm Building</a>
             </div>
             <button class="hero-sound" type="button" aria-label="Turn intro video sound on" aria-pressed="false">
               <span>Sound</span>
@@ -113,64 +116,46 @@
         </div>
       </section>
 
-      <section class="section dark ventures unovia-section" id="unovia">
-        <div class="wrap">
-          <article class="feature-card reveal">
-            <div class="visual visual-unovia parallax" data-parallax="0.04" aria-hidden="true"></div>
-            <div class="feature-copy">
-              <img class="venture-logo unovia-mark" src="./assets/brand/unovia-logo.png" alt="Unovia Technologies logo" width="180" height="70">
-              <p class="eyebrow lime">Unovia Technologies</p>
-              <h3>Building the future of work.</h3>
-              <p>Unovia Technologies creates AI employees and intelligent software for African businesses. We build tools that support sales, customer service, operations, membership management and other important business functions.</p>
-              <p>The goal is simple: to give growing companies access to technology that improves productivity without placing every responsibility on a larger payroll.</p>
-              <a class="button button-lime" href="https://unovia.ai" target="_blank" rel="noopener">Visit Unovia Technologies <span aria-hidden="true">-></span></a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section dark products-section" id="products">
+      <section class="section dark featured-grid-section" id="featured">
         <div class="wrap">
           <div class="section-head">
             <div>
-              <p class="eyebrow lime reveal">What We're Building</p>
-              <h2 class="section-title reveal d1">AI products for African businesses.</h2>
+              <p class="eyebrow lime reveal">Featured</p>
+              <h2 class="section-title reveal d1">What I'm building.</h2>
             </div>
-            <p class="head-copy reveal d2">Practical systems for the teams that need to respond faster, manage more and grow without adding pressure everywhere.</p>
+            <p class="head-copy reveal d2">Companies, products and communities - each one a different answer to the same question: how do we build Africa's next chapter?</p>
           </div>
-          <div class="venture-grid">
-            <article class="venture-card dark-card reveal">
-              <p class="eyebrow lime">Amber</p>
-              <h3>Africa's first AI social media manager.</h3>
-              <p>Amber helps businesses manage customer conversations across social media, 24 hours a day. She responds to enquiries, qualifies leads, schedules appointments, updates customer records and follows up with prospects.</p>
-              <div class="chat-demo" aria-label="Amber chat sample">
-                <span class="bubble left">Hi! I saw you enquired about the 2-bedroom unit - still interested?</span>
-                <span class="bubble right">Yes! Can I view it this weekend?</span>
-                <span class="bubble left">Booked you for Saturday 11am. I'll send a reminder.</span>
-              </div>
-              <a class="button button-outline" href="https://amber.unovia.ai" target="_blank" rel="noopener">Meet Amber <span aria-hidden="true">-></span></a>
-            </article>
-
-            <article class="venture-card pale-card reveal d1">
-              <div class="mini-visual visual-lana-logo" aria-hidden="true"></div>
-              <p class="eyebrow">Lana</p>
-              <h3>Africa's first AI-powered workspace management system.</h3>
-              <p>Lana helps coworking spaces, gyms, short-let apartments and other membership-based businesses manage their entire operation from one intelligent platform.</p>
-              <div class="scan-demo" aria-label="Lana check-in sample">
-                <span class="scan-line"></span>
-                <span class="checkmark" aria-hidden="true">✓</span>
-                <strong>Checked in - 09:42</strong>
-                <small>Membership verified - Access granted</small>
-              </div>
-              <a class="button button-ink" href="https://lana.unovia.ai" target="_blank" rel="noopener">Discover Lana <span aria-hidden="true">-></span></a>
-            </article>
-
-            <article class="venture-card waitlist-card reveal d2">
-              <p class="eyebrow lime">Arthena</p>
-              <h3>Africa's first AI-powered HR screening system.</h3>
-              <p>Coming soon. Arthena is designed to help businesses screen applicants, assess qualifications and identify suitable candidates faster, reducing manual review and shortening hiring timelines.</p>
-              <a class="button button-outline" href="#contact">Join the Waitlist <span aria-hidden="true">-></span></a>
-            </article>
+          <div class="featured-tiles">
+            <a class="featured-tile reveal" href="https://unovia.ai" target="_blank" rel="noopener" style="--tile-image: url('./assets/brand/unovia-ai.jpg')">
+              <span class="tile-kicker">Company</span>
+              <strong>Unovia Technologies</strong>
+              <span class="tile-arrow" aria-hidden="true">-></span>
+            </a>
+            <a class="featured-tile reveal d1" href="https://amber.unovia.ai" target="_blank" rel="noopener" style="--tile-image: url('./assets/media/pal-09.jpg')">
+              <span class="tile-kicker">AI Product</span>
+              <strong>Amber</strong>
+              <span class="tile-arrow" aria-hidden="true">-></span>
+            </a>
+            <a class="featured-tile reveal d2" href="https://lana.unovia.ai" target="_blank" rel="noopener" style="--tile-image: url('./assets/brand/lana-logo.jpg')">
+              <span class="tile-kicker">AI Product</span>
+              <strong>Lana</strong>
+              <span class="tile-arrow" aria-hidden="true">-></span>
+            </a>
+            <a class="featured-tile reveal" href="#contact" style="--tile-image: url('./assets/media/pal-25.jpg')">
+              <span class="tile-kicker">Coming Soon</span>
+              <strong>Arthena</strong>
+              <span class="tile-arrow" aria-hidden="true">-></span>
+            </a>
+            <a class="featured-tile reveal d1" href="#lions-path" style="--tile-image: url('./assets/media/pal-07.jpg')">
+              <span class="tile-kicker">Community</span>
+              <strong>Lions Path Initiative</strong>
+              <span class="tile-arrow" aria-hidden="true">-></span>
+            </a>
+            <a class="featured-tile reveal d2" href="#media" style="--tile-image: url('./assets/media/tedx-cover.jpeg')">
+              <span class="tile-kicker">Watch</span>
+              <strong>TEDx Talk</strong>
+              <span class="tile-arrow" aria-hidden="true">-></span>
+            </a>
           </div>
         </div>
       </section>
@@ -179,13 +164,17 @@
         <div class="wrap">
           <div class="section-head">
             <div>
-              <p class="eyebrow lime reveal">My Journey</p>
+              <p class="eyebrow lime reveal">Timeline</p>
               <h2 class="section-title reveal d1">The path has not been linear.</h2>
             </div>
             <p class="head-copy reveal d2">Music, real estate and technology each became a different classroom for building.</p>
           </div>
-          <div class="journey-stack">
-            <article class="journey-card reveal">
+          <div class="timeline">
+            <article class="timeline-item journey-card reveal">
+              <div class="timeline-marker" aria-hidden="true">
+                <span class="timeline-num">01</span>
+                <span class="timeline-line"></span>
+              </div>
               <div class="journey-media">
                 <video src="./assets/media/pal-bass-entrepreneurship.mp4" poster="./assets/media/posters/pal-bass-poster.jpg" muted loop playsinline controls preload="metadata"></video>
               </div>
@@ -195,7 +184,11 @@
                 <p>Pal Bass Academy was a music education platform that reached students in more than 35 countries. It started with a passion for music but became my first experience of building a product, teaching a global audience and growing a digital community.</p>
               </div>
             </article>
-            <article class="journey-card reverse reveal">
+            <article class="timeline-item journey-card reverse reveal">
+              <div class="timeline-marker" aria-hidden="true">
+                <span class="timeline-num">02</span>
+                <span class="timeline-line"></span>
+              </div>
               <div class="journey-media image-media real-estate-media" aria-hidden="true"></div>
               <div>
                 <p class="eyebrow bronze">Real Estate</p>
@@ -203,7 +196,11 @@
                 <p>I built and led a sales team that generated billions of naira in sales. Real estate taught me how to sell, lead, negotiate and understand the decisions people make around money, security and opportunity.</p>
               </div>
             </article>
-            <article class="journey-card reveal">
+            <article class="timeline-item journey-card reveal">
+              <div class="timeline-marker" aria-hidden="true">
+                <span class="timeline-num">03</span>
+                <span class="timeline-line"></span>
+              </div>
               <div class="journey-media">
                 <video src="./assets/media/pal-ai.mp4" poster="./assets/media/posters/pal-ai-poster.jpg" muted loop playsinline controls preload="metadata"></video>
               </div>
@@ -222,7 +219,7 @@
           <div class="speaking-layout">
             <div class="speaking-collage reveal">
               <div class="speaking-collage-photo main">
-                <img src="./assets/media/tedx-cover.jpeg" alt="Pal Wabuson speaking on stage at TEDx Tanke" loading="lazy">
+                <img src="./assets/media/tedx-cover-crop.jpg" alt="Pal Wabuson speaking on stage at TEDx Tanke" loading="lazy">
               </div>
               <div class="speaking-collage-photo secondary">
                 <img src="./assets/media/speaking-audience.jpg" alt="Conference audience listening to a talk" loading="lazy">
@@ -254,17 +251,47 @@
         </div>
       </section>
 
-      <section class="section dark ideas-section" id="ideas">
+      <section class="section dark news-section" id="news">
         <div class="wrap">
           <div class="section-head">
             <div>
-              <p class="eyebrow lime reveal">Ideas</p>
-              <h2 class="section-title reveal d1">What I am thinking about.</h2>
+              <p class="eyebrow lime reveal">News &amp; Stories</p>
+              <h2 class="section-title reveal d1">In the press, on my mind.</h2>
             </div>
-            <p class="head-copy reveal d2">I write and speak about business, technology, sales, leadership and the changing nature of work.</p>
+            <p class="head-copy reveal d2">Coverage from the newsroom and the ideas I keep coming back to.</p>
           </div>
-          <div class="idea-grid" id="ideas-grid"></div>
-          <a class="button button-outline reveal d2" href="#media">Explore My Ideas <span aria-hidden="true">-></span></a>
+          <div class="news-grid">
+            <a class="news-card reveal" href="https://www.thisdaylive.com/2026/04/18/pal-wabuson-appointed-global-change-ambassador-at-echo-change-to-champion-youth-leadership/" target="_blank" rel="noopener">
+              <span class="news-thumb"><img src="./assets/press/thisday-echo-change.png" alt="ThisDay headline about Pal Wabuson appointed Global Change Ambassador" loading="lazy"></span>
+              <span class="news-kicker">Press - ThisDay</span>
+              <strong>Pal Wabuson appointed Global Change Ambassador at Echo Change.</strong>
+            </a>
+            <a class="news-card reveal d1" href="https://www.thisdaylive.com/2026/06/01/unovia-technologies-launches-lana-africas-first-ai-powered-workspace-management-platform/" target="_blank" rel="noopener">
+              <span class="news-thumb"><img src="./assets/press/thisday-lana.png" alt="ThisDay headline about Unovia Technologies launching Lana" loading="lazy"></span>
+              <span class="news-kicker">Press - ThisDay</span>
+              <strong>Unovia Technologies launches Lana, Africa's first AI-powered workspace platform.</strong>
+            </a>
+            <a class="news-card reveal d2" href="#media">
+              <span class="news-thumb"><img src="./assets/media/pal-11.jpg" alt="Pal Wabuson at work" loading="lazy"></span>
+              <span class="news-kicker">Ideas</span>
+              <strong>What real estate taught me about building technology.</strong>
+            </a>
+            <a class="news-card reveal" href="#media">
+              <span class="news-thumb"><img src="./assets/media/pal-16.jpg" alt="Pal Wabuson speaking with a team" loading="lazy"></span>
+              <span class="news-kicker">Ideas</span>
+              <strong>The future of AI employees.</strong>
+            </a>
+            <a class="news-card reveal d1" href="#media">
+              <span class="news-thumb"><img src="./assets/media/pal-24.jpg" alt="Pal Wabuson presenting" loading="lazy"></span>
+              <span class="news-kicker">Ideas</span>
+              <strong>How small teams can achieve more.</strong>
+            </a>
+            <a class="news-card reveal d2" href="#media">
+              <span class="news-thumb"><img src="./assets/media/pal-31.jpg" alt="Pal Wabuson in conversation" loading="lazy"></span>
+              <span class="news-kicker">Ideas</span>
+              <strong>Reinvention without starting again.</strong>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -288,30 +315,13 @@
             <small>Open the lecture</small>
           </button>
         </div>
-        <div class="wrap press-showcase reveal d1">
-          <div class="section-head compact">
-            <div>
-              <p class="eyebrow lime">Newspaper Features</p>
-              <h2 class="section-title mid">Featured in ThisDay.</h2>
-            </div>
-            <p class="head-copy">Tap a headline screenshot to open the full article.</p>
-          </div>
-          <div class="press-shot-grid">
-            <a class="press-shot" href="https://www.thisdaylive.com/2026/04/18/pal-wabuson-appointed-global-change-ambassador-at-echo-change-to-champion-youth-leadership/" target="_blank" rel="noopener">
-              <img src="./assets/press/thisday-echo-change.png" alt="ThisDay headline about Pal Wabuson appointed Global Change Ambassador" loading="lazy">
-            </a>
-            <a class="press-shot" href="https://www.thisdaylive.com/2026/06/01/unovia-technologies-launches-lana-africas-first-ai-powered-workspace-management-platform/" target="_blank" rel="noopener">
-              <img src="./assets/press/thisday-lana.png" alt="ThisDay headline about Unovia Technologies launching Lana" loading="lazy">
-            </a>
-          </div>
-        </div>
-        <div class="hall-of-fame reveal d1">
-          <div class="wrap">
+        <div class="tile-wall reveal d1">
+          <div class="tile-wall-grid" id="tile-wall-grid" aria-hidden="true"></div>
+          <div class="tile-wall-overlay">
             <p class="eyebrow lime">Hall of Fame</p>
-            <h2 class="section-title mid">Moments from the build.</h2>
-          </div>
-          <div class="fame-rail" aria-label="Pal Wabuson photo hall of fame">
-            <div class="fame-track" id="fame-track"></div>
+            <h2 class="tile-wall-title">Moments from the build.</h2>
+            <p class="tile-wall-copy">Stages, rooms and people from the journey so far.</p>
+            <a class="button button-outline" href="#contact">Find Out More</a>
           </div>
         </div>
       </section>
@@ -366,12 +376,16 @@
     <footer class="footer">
       <div class="footer-marquee">Still Building.</div>
       <div class="footer-links" id="footer-links"></div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/pal-wabuson-948168234/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hello@palwabuson.com">Email</a>
+      </div>
       <div class="footer-bottom">
         <span>Pal Wabuson - Founder, Unovia Technologies. Entrepreneur. TEDx Speaker. Convener, Lions Path Initiative.</span>
         <span>© <span id="year"></span> Pal Wabuson</span>
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script.js?v=20260702-sb-style"></script>
   </body>
 </html>

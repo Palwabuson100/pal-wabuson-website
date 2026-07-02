@@ -154,7 +154,6 @@ img {
 
 /* ==== Hero ==== */
 .hero {
-  order: 0;
   position: relative;
   min-height: 680px;
   height: 100vh;
@@ -411,7 +410,6 @@ img {
 }
 
 .intro {
-  order: 1;
   padding-top: clamp(90px, 12vw, 180px);
   padding-bottom: clamp(90px, 12vw, 180px);
 }
@@ -635,33 +633,8 @@ img {
 }
 
 .ventures {
-  order: 2;
   padding-left: 0;
   padding-right: 0;
-}
-
-#journey {
-  order: 3;
-}
-
-.masterclass {
-  order: 4;
-}
-
-.speaking {
-  order: 5;
-}
-
-.media-story {
-  order: 6;
-}
-
-.newsletter {
-  order: 7;
-}
-
-.final-cta {
-  order: 8;
 }
 
 /* ==== Unovia feature card ==== */
@@ -1722,46 +1695,6 @@ img {
   transform: none;
 }
 
-#intro {
-  order: 1;
-}
-
-#unovia {
-  order: 2;
-}
-
-#products {
-  order: 3;
-}
-
-#journey {
-  order: 4;
-}
-
-#speaking {
-  order: 5;
-}
-
-#lions-path {
-  order: 6;
-}
-
-#ideas {
-  order: 7;
-}
-
-#media {
-  order: 8;
-}
-
-#global {
-  order: 9;
-}
-
-#contact {
-  order: 10;
-}
-
 .copy-intro {
   min-height: auto;
   padding-top: clamp(100px, 10vw, 150px);
@@ -1813,6 +1746,302 @@ img {
     radial-gradient(circle at 82% 18%, rgba(199, 244, 100, 0.18), transparent 20%),
     #111;
   color: var(--paper);
+}
+
+/* ==== Hero roles rotation ==== */
+.hero-roles {
+  margin: 14px 0 0;
+  min-height: 1.4em;
+  color: var(--lime);
+  font-size: clamp(14px, 1.4vw, 18px);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.role-swap {
+  display: inline-block;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.role-swap.swapping {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* ==== Featured tiles ==== */
+.featured-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: clamp(34px, 5vw, 70px);
+}
+
+.featured-tile {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  min-height: clamp(240px, 24vw, 340px);
+  overflow: hidden;
+  padding: clamp(20px, 2.4vw, 32px);
+  border: 1px solid rgba(243, 240, 232, 0.16);
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.featured-tile::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(8, 8, 8, 0.12), rgba(8, 8, 8, 0.82)),
+    var(--tile-image) center / cover;
+  content: "";
+  filter: grayscale(0.15) contrast(1.02);
+  transition: transform 0.5s var(--ease), filter 0.35s var(--ease);
+}
+
+.featured-tile:hover::before,
+.featured-tile:focus-visible::before {
+  filter: grayscale(0) contrast(1);
+  transform: scale(1.04);
+}
+
+.featured-tile:hover,
+.featured-tile:focus-visible {
+  border-color: rgba(199, 244, 100, 0.78);
+}
+
+.tile-kicker {
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.featured-tile strong {
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.tile-arrow {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  color: var(--lime);
+  font-size: 20px;
+  font-weight: 700;
+  transition: transform 0.35s var(--ease);
+}
+
+.featured-tile:hover .tile-arrow,
+.featured-tile:focus-visible .tile-arrow {
+  transform: translate(4px, -4px);
+}
+
+/* ==== News & Stories ==== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: clamp(34px, 5vw, 70px);
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.news-thumb {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid rgba(243, 240, 232, 0.16);
+  background: #111;
+}
+
+.news-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.9) contrast(1.02);
+  transition: transform 0.5s var(--ease), filter 0.35s var(--ease);
+}
+
+.news-card:hover .news-thumb img,
+.news-card:focus-visible .news-thumb img {
+  filter: saturate(1) contrast(1);
+  transform: scale(1.04);
+}
+
+.news-kicker {
+  color: var(--bronze);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.news-card strong {
+  font-size: clamp(18px, 1.7vw, 24px);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.news-card:hover strong,
+.news-card:focus-visible strong {
+  color: var(--lime);
+}
+
+/* ==== Tile wall ==== */
+.tile-wall {
+  position: relative;
+  margin-top: clamp(60px, 8vw, 120px);
+  overflow: hidden;
+  border-top: 1px solid rgba(243, 240, 232, 0.14);
+  border-bottom: 1px solid rgba(243, 240, 232, 0.14);
+}
+
+.tile-wall-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+  padding: 6px;
+}
+
+.wall-tile {
+  margin: 0;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: #111;
+}
+
+.wall-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.38) grayscale(0.2) contrast(1.04);
+  transition: filter 0.35s var(--ease);
+}
+
+.wall-tile:hover img {
+  filter: brightness(0.85) grayscale(0) contrast(1);
+}
+
+.tile-wall-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: clamp(20px, 4vw, 48px);
+  pointer-events: none;
+  text-align: center;
+}
+
+.tile-wall-overlay .eyebrow {
+  margin: 0;
+}
+
+.tile-wall-overlay .button {
+  pointer-events: auto;
+}
+
+.tile-wall-title {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(44px, 6vw, 96px);
+  font-weight: 400;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.tile-wall-copy {
+  max-width: 46ch;
+  margin: 0;
+  color: rgba(243, 240, 232, 0.78);
+  font-family: "Spectral", Georgia, serif;
+  font-size: clamp(17px, 1.4vw, 21px);
+  font-weight: 300;
+}
+
+/* ==== Timeline markers ==== */
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 28px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: -14px;
+  left: clamp(26px, 4vw, 48px);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.timeline-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 28px;
+  border: 1px solid rgba(199, 244, 100, 0.5);
+  background: var(--ink);
+  color: var(--lime);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.timeline-line {
+  display: block;
+  width: clamp(40px, 6vw, 110px);
+  height: 1px;
+  background: rgba(243, 240, 232, 0.25);
+}
+
+/* ==== Footer socials ==== */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  padding: 6px 20px 26px;
+}
+
+.footer-socials a {
+  color: rgba(243, 240, 232, 0.72);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-socials a:hover,
+.footer-socials a:focus-visible {
+  color: var(--lime);
 }
 
 /* ==== Journey ==== */
@@ -1997,6 +2226,15 @@ img {
 
   .speaking-collage-photo.secondary {
     right: 0;
+  }
+
+  .featured-tiles,
+  .news-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tile-wall-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .journey-card.reverse .journey-media {
@@ -2249,6 +2487,28 @@ img {
     bottom: -48px;
     width: 62%;
   }
+
+  .featured-tiles,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tile-wall-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .wall-tile:nth-child(n + 13) {
+    display: none;
+  }
+
+  .tile-wall-title {
+    font-size: clamp(36px, 11vw, 54px);
+  }
+
+  .timeline-marker {
+    top: -13px;
+    left: 20px;
+  }
 }
 
 /* ==== Responsive: <=420px ==== */
@@ -2277,54 +2537,6 @@ img {
     grid-auto-rows: 132px;
     gap: 10px;
   }
-}
-
-main > #top {
-  order: 0 !important;
-}
-
-main > #intro {
-  order: 1 !important;
-}
-
-main > #unovia {
-  order: 2 !important;
-}
-
-main > #products {
-  order: 3 !important;
-}
-
-main > #journey {
-  order: 4 !important;
-}
-
-main > #speaking {
-  order: 5 !important;
-}
-
-main > #lions-path {
-  order: 6 !important;
-}
-
-main > #ideas {
-  order: 7 !important;
-}
-
-main > #media {
-  order: 8 !important;
-}
-
-main > #story-viewer {
-  order: 9 !important;
-}
-
-main > #global {
-  order: 10 !important;
-}
-
-main > #contact {
-  order: 11 !important;
 }
 
 .featured-section {
