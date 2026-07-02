@@ -1099,15 +1099,6 @@ img {
   aspect-ratio: 4 / 5;
 }
 
-.speaking-collage-photo.secondary {
-  position: absolute;
-  right: -6%;
-  bottom: -10%;
-  width: 52%;
-  aspect-ratio: 4 / 3;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-}
-
 .speaking-copy .button-row {
   margin-top: 8px;
 }
@@ -2256,10 +2247,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .speaking-collage-photo.secondary {
-    right: 0;
-  }
-
   .featured-tiles,
   .news-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2508,16 +2495,6 @@ img {
 
   .press-grid a {
     min-height: 300px;
-  }
-
-  .speaking-collage {
-    margin-bottom: 60px;
-  }
-
-  .speaking-collage-photo.secondary {
-    right: 0;
-    bottom: -48px;
-    width: 62%;
   }
 
   .featured-tiles,
