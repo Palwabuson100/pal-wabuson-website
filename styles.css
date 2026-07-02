@@ -1764,6 +1764,22 @@ img {
 }
 
 /* ==== Featured tiles ==== */
+.featured-grid-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.featured-grid-section::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url("./assets/brand/africa-outline.svg") right -8% center / auto 118% no-repeat;
+  content: "";
+  opacity: 0.045;
+  pointer-events: none;
+}
+
 .featured-tiles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
