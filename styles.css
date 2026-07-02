@@ -1812,6 +1812,18 @@ img {
   transform: scale(1.04);
 }
 
+.featured-tile.logo-tile::before {
+  background:
+    linear-gradient(180deg, rgba(8, 8, 8, 0.04), rgba(8, 8, 8, 0.5)),
+    var(--tile-image) center 42% / 74% no-repeat #f3f0e8;
+  filter: none;
+}
+
+.featured-tile.logo-tile .tile-kicker,
+.featured-tile.logo-tile .tile-arrow {
+  color: var(--lime);
+}
+
 .featured-tile:hover,
 .featured-tile:focus-visible {
   border-color: rgba(199, 244, 100, 0.78);
@@ -1852,6 +1864,10 @@ img {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   margin-top: clamp(34px, 5vw, 70px);
+}
+
+.news-grid.press-only {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .news-card {
@@ -2110,7 +2126,7 @@ img {
 .real-estate-media {
   background:
     linear-gradient(180deg, rgba(8, 8, 8, 0.05), rgba(8, 8, 8, 0.32)),
-    url("./assets/brand/real-estate-site.jpg") center 30% / cover;
+    url("./assets/media/pal-31.jpg") center 30% / cover;
 }
 
 /* ==== Lions Path community ==== */
