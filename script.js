@@ -10,6 +10,7 @@ const talks = [
 const footerLinks = [
   ["Intro", "#intro"],
   ["Featured", "#featured"],
+  ["Articles", "#articles"],
   ["Timeline", "#journey"],
   ["News", "#news"],
   ["Media", "#media"],
