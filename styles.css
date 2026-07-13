@@ -2161,9 +2161,80 @@ img {
   pointer-events: none;
 }
 
+.unovia-company-link {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  min-height: 330px;
+  margin-top: clamp(34px, 5vw, 64px);
+  border: 1px solid rgba(243, 240, 232, 0.16);
+  color: var(--paper);
+  text-decoration: none;
+  transition: border-color 0.3s var(--ease);
+}
+
+.unovia-company-link:hover,
+.unovia-company-link:focus-visible {
+  border-color: rgba(199, 244, 100, 0.78);
+}
+
+.unovia-company-logo {
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  padding: clamp(36px, 6vw, 84px);
+  background: var(--paper);
+}
+
+.unovia-company-logo img {
+  width: min(100%, 320px);
+  max-height: 130px;
+  object-fit: contain;
+}
+
+.unovia-company-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(34px, 5vw, 72px);
+  background: rgba(243, 240, 232, 0.035);
+}
+
+.unovia-company-copy small,
+.unovia-company-copy > span {
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.unovia-company-copy strong {
+  max-width: 16ch;
+  margin: 20px 0 34px;
+  font-family: var(--display);
+  font-size: clamp(42px, 5vw, 74px);
+  font-weight: 400;
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+
+.portfolio-heading {
+  margin-top: clamp(72px, 9vw, 128px);
+}
+
+.portfolio-heading h3 {
+  margin: 12px 0 0;
+  font-family: var(--display);
+  font-size: clamp(52px, 7vw, 104px);
+  font-weight: 400;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
 .featured-tiles {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-top: clamp(34px, 5vw, 70px);
 }
@@ -2722,6 +2793,10 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .unovia-company-link {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .article-lead {
     grid-template-columns: 1fr;
   }
@@ -2984,6 +3059,14 @@ img {
   .featured-tiles,
   .news-grid {
     grid-template-columns: 1fr;
+  }
+
+  .unovia-company-link {
+    grid-template-columns: 1fr;
+  }
+
+  .unovia-company-logo {
+    min-height: 220px;
   }
 
   .article-lead {
