@@ -1782,7 +1782,7 @@ img {
 
 .featured-tiles {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-top: clamp(34px, 5vw, 70px);
 }
@@ -1839,7 +1839,7 @@ img {
 
 .featured-tile.logo-tile::before {
   background:
-    linear-gradient(180deg, rgba(243, 240, 232, 0), rgba(243, 240, 232, 0.82)),
+    linear-gradient(180deg, rgba(8, 8, 8, 0.12), rgba(8, 8, 8, 0.9)),
     var(--tile-image) center 42% / 74% no-repeat #f3f0e8;
   filter: none;
 }
@@ -1849,9 +1849,9 @@ img {
   color: var(--lime);
 }
 
-.featured-tile.logo-tile strong,
-.featured-tile.logo-tile .tile-desc {
-  color: var(--ink);
+.featured-tile.logo-tile strong {
+  color: var(--paper);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
 }
 
 .featured-tile:hover,
@@ -1885,7 +1885,7 @@ img {
 }
 
 .featured-tile.logo-tile .tile-desc {
-  color: rgba(8, 8, 8, 0.68);
+  color: rgba(243, 240, 232, 0.78);
 }
 
 .tile-arrow {
@@ -2247,6 +2247,57 @@ img {
 
 .global-card .button {
   margin-top: 28px;
+}
+
+.contribution-list {
+  display: grid;
+  gap: 18px;
+  margin-top: clamp(28px, 4vw, 42px);
+}
+
+.contribution-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 18px;
+  padding: clamp(18px, 2.4vw, 28px);
+  border: 1px solid rgba(243, 240, 232, 0.14);
+  background: rgba(8, 8, 8, 0.22);
+}
+
+.contribution-item > span {
+  color: var(--lime);
+  font-family: var(--display);
+  font-size: 42px;
+  line-height: 0.9;
+}
+
+.contribution-item h3 {
+  margin: 0 0 8px;
+  color: var(--paper);
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.05;
+}
+
+.contribution-item p {
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.5;
+}
+
+.text-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--lime);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  color: var(--paper);
 }
 
 .global-image {
