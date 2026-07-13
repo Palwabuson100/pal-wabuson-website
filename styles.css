@@ -746,7 +746,7 @@ img {
   font-size: clamp(24px, 3vw, 44px);
 }
 
-/* ==== Product cards (Amber / Lana / Arthena) ==== */
+/* ==== Product cards (Amber / Lana / Iris) ==== */
 .venture-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1827,7 +1827,8 @@ img {
 }
 
 .featured-tile.self-labeled .tile-kicker,
-.featured-tile.self-labeled strong {
+.featured-tile.self-labeled strong,
+.featured-tile.self-labeled .tile-desc {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1838,7 +1839,7 @@ img {
 
 .featured-tile.logo-tile::before {
   background:
-    linear-gradient(180deg, rgba(8, 8, 8, 0.04), rgba(8, 8, 8, 0.5)),
+    linear-gradient(180deg, rgba(243, 240, 232, 0), rgba(243, 240, 232, 0.82)),
     var(--tile-image) center 42% / 74% no-repeat #f3f0e8;
   filter: none;
 }
@@ -1846,6 +1847,11 @@ img {
 .featured-tile.logo-tile .tile-kicker,
 .featured-tile.logo-tile .tile-arrow {
   color: var(--lime);
+}
+
+.featured-tile.logo-tile strong,
+.featured-tile.logo-tile .tile-desc {
+  color: var(--ink);
 }
 
 .featured-tile:hover,
@@ -1865,6 +1871,21 @@ img {
   font-size: clamp(22px, 2.2vw, 32px);
   font-weight: 700;
   line-height: 1.1;
+}
+
+.tile-desc {
+  display: block;
+  max-width: 28ch;
+  margin-top: 4px;
+  color: rgba(243, 240, 232, 0.76);
+  font-family: "Spectral", Georgia, serif;
+  font-size: clamp(14px, 1.15vw, 16px);
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+.featured-tile.logo-tile .tile-desc {
+  color: rgba(8, 8, 8, 0.68);
 }
 
 .tile-arrow {

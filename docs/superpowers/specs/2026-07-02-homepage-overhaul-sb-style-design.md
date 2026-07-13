@@ -7,7 +7,7 @@ After the Speaking Engagements redesign shipped, the user clarified the real goa
 ## Approved structure (all reusing existing assets, dark theme + lime accent + current fonts stay)
 
 1. **Hero** — keep full-screen intro video + sound toggle; add SB-style rotating descriptor line under the name cycling: Entrepreneur → Founder of Unovia Technologies → TEDx Speaker → Convener, Lions Path (animated word swap; respects prefers-reduced-motion).
-2. **Featured grid** — 6 equal tiles (image + heading + arrow): Unovia (→unovia.ai), Amber (→amber.unovia.ai), Lana (→lana.unovia.ai), Arthena (→#contact), Lions Path (→#lions-path), TEDx Talk (→#media). Replaces the separate Unovia feature-card and products sections.
+2. **Featured grid** — 6 equal tiles (image + heading + arrow): Unovia (→unovia.ai), Amber (→amber.unovia.ai), Lana (→lana.unovia.ai), Iris (→#contact), Lions Path (→#lions-path), TEDx Talk (→#media). Replaces the separate Unovia feature-card and products sections.
 3. **Timeline** — vertical chronology replacing the journey-stack: Pal Bass Academy → Real Estate → Technology/Unovia, using existing journey photos/videos, numbered chapters (01/02/03 — no invented years). Reuses the existing dormant `.chapter` CSS where possible.
 4. **News & Stories** — uniform card grid (thumbnail + category label + headline): 2 ThisDay press articles (link out) + 4 idea cards. Replaces the separate press-showcase and ideas sections.
 5. **Tile wall** — full-width static grid of photo tiles from the 38 hall-of-fame images, dimmed, with centered overlay (name/logotype + tagline + outline pill button). Replaces the scrolling fame-rail marquee. Story portals (TEDx/AI lecture) stay in the media section.
