@@ -2311,6 +2311,19 @@ img {
   border-color: rgba(199, 244, 100, 0.78);
 }
 
+.featured-tile.coming-soon {
+  cursor: default;
+}
+
+.featured-tile.coming-soon:hover {
+  border-color: rgba(243, 240, 232, 0.16);
+}
+
+.featured-tile.coming-soon:hover::before {
+  filter: none;
+  transform: none;
+}
+
 .tile-kicker {
   color: var(--lime);
   font-size: 11px;
