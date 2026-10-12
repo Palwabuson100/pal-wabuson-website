@@ -9,6 +9,8 @@ const talks = [
 
 const footerLinks = [
   ["Intro", "#intro"],
+  ["AI Agents", "#ai-services"],
+  ["Hire an AI Engineer", "/ai-engineer-nigeria.html"],
   ["Featured", "#featured"],
   ["Articles", "#articles"],
   ["Timeline", "#journey"],
@@ -16,6 +18,7 @@ const footerLinks = [
   ["Media", "#media"],
   ["Speaking", "#speaking"],
   ["Lions Path", "#lions-path"],
+  ["FAQ", "#faq"],
   ["Contact", "#contact"]
 ];
 
@@ -230,8 +233,10 @@ const roleSwap = document.getElementById("role-swap");
 
 if (roleSwap && !prefersReducedMotion.matches) {
   const roles = [
-    "Entrepreneur",
+    "AI Engineer",
+    "AI Agent Builder",
     "Founder of Unovia Technologies",
+    "Entrepreneur",
     "TEDx Speaker",
     "Convener, Lions Path Initiative"
   ];

@@ -66,3 +66,12 @@ Then open:
 ```txt
 http://127.0.0.1:4173/
 ```
+
+## SEO: AI Engineer in Nigeria
+
+Target searches: "AI engineer in Nigeria", "best AI engineer in Nigeria", "how to build AI agents in Nigeria", "how can AI agents profit my business in Nigeria", "I need AI agents".
+
+- `ai-engineer-nigeria.html`: service landing page (Service, FAQPage and BreadcrumbList schema).
+- `articles/how-to-build-ai-agents-in-nigeria.html`, `articles/how-ai-agents-can-profit-your-business-in-nigeria.html`, `articles/how-to-hire-the-best-ai-engineer-in-nigeria.html`: supporting guides.
+- Homepage `#ai-services` and `#faq` sections; the FAQPage JSON-LD in `index.html` mirrors the visible FAQ, so update both together.
+- `llms.txt` summarises the site for AI search tools. Add new pages to it and to `sitemap.xml`.

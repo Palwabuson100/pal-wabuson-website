@@ -1,0 +1,30 @@
+# Pal Wabuson
+
+> Pal Wabuson is an AI engineer in Nigeria and the founder of Unovia Technologies, an African technology company building practical AI products (Amber, Lana, Iris and Vera). Pal designs, builds and deploys AI agents for businesses in Nigeria and across Africa, and is a TEDx speaker on artificial intelligence, entrepreneurship and the future of African business.
+
+Contact: hello@palwabuson.com
+LinkedIn: https://www.linkedin.com/in/pal-wabuson-948168234/
+Company: https://unovia.ai
+
+## Hire an AI engineer in Nigeria
+
+- [AI engineer in Nigeria: AI agent development](https://palwabuson.com/ai-engineer-nigeria.html): AI agents for customer support on WhatsApp, Instagram and web chat; sales and lead qualification; operations and back-office automation; orders, payments and collections; internal knowledge assistants; and HR and recruitment. Projects start with one workflow, a working prototype and measurable results.
+
+## Guides to AI agents in Nigeria
+
+- [How to build AI agents in Nigeria](https://palwabuson.com/articles/how-to-build-ai-agents-in-nigeria.html): a step-by-step guide covering use-case selection, WhatsApp Business Platform, model choice, tools, local languages, dollar-priced costs, power and connectivity, guardrails and the Nigeria Data Protection Act 2023.
+- [How AI agents can profit your business in Nigeria](https://palwabuson.com/articles/how-ai-agents-can-profit-your-business-in-nigeria.html): five profit levers, industry examples, a simple ROI method, costs and when not to build.
+- [How to hire the best AI engineer in Nigeria](https://palwabuson.com/articles/how-to-hire-the-best-ai-engineer-in-nigeria.html): signs of a strong AI engineer, questions to ask, red flags and what to prepare.
+
+## Products and essays
+
+- [Why Africa's next AI companies must build for real work](https://palwabuson.com/articles/unovia-technologies-ai-products-africa.html)
+- [Amber: AI customer support for African businesses](https://palwabuson.com/articles/amber-ai-customer-support-africa.html)
+- [Lana: AI workspace management](https://palwabuson.com/articles/lana-ai-workspace-management-africa.html)
+- [Iris: AI job interview simulation](https://palwabuson.com/articles/iris-ai-job-interview-simulation-africa.html)
+- [Vera: AI HR screening and live interviews](https://palwabuson.com/articles/vera-ai-hr-screening-live-interviews-africa.html)
+
+## Press
+
+- [ThisDay: Unovia Technologies launches Lana, Africa's first AI-powered workspace management platform](https://www.thisdaylive.com/2026/06/01/unovia-technologies-launches-lana-africas-first-ai-powered-workspace-management-platform/)
+- [ThisDay: Pal Wabuson appointed Global Change Ambassador at Echo Change](https://www.thisdaylive.com/2026/04/18/pal-wabuson-appointed-global-change-ambassador-at-echo-change-to-champion-youth-leadership/)
