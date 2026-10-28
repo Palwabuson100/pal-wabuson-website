@@ -10,7 +10,7 @@ Company: https://unovia.ai
 
 - [Enterprise AI transformation](https://palwabuson.com/#enterprise): opportunity assessment, workflow redesign before technology, implementation with owners and success measures, and adoption across teams.
 - [Case study: 1159 Realty](https://palwabuson.com/#case-study): AI-assisted hiring redesigned at 1159 Realty. The first pilot narrowed 34 applicants to 4 human interviews; it became the HR team's standing practice (179 candidates, 66 interview reports) and was scaled, as Vera, to about 10 HR teams. Includes a review from the HR Manager.
-- [Case study: House 12 Workspace and Lifestyle](https://palwabuson.com/#case-study-lana): a coworking space that ran memberships on paper moved its daily operations (plans, QR check-in, renewals, payments, reminders, staff roles) onto one system. Since April 2026: 191 members, 1,053 check-ins, 25 plans, 9 staff accounts. That system became Lana. Includes a video review.
+- [Case study: House 12 Workspace and Lifestyle](https://palwabuson.com/#case-study-lana): a coworking space that ran memberships on paper moved its daily operations (plans, QR check-in, renewals, payments, reminders, staff roles) onto one system. That system became Lana. Includes a video review.
 
 ## Products
 
