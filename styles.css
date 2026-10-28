@@ -3963,3 +3963,41 @@ img {
 .copy-intro {
   padding-bottom: clamp(56px, 6vw, 90px);
 }
+
+/* Section openers: supporting text sits directly under its heading, on the same
+   left edge, instead of a narrow column floating at the far right. */
+.section-head {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.section-head .head-copy {
+  max-width: 52ch;
+  margin-top: 22px;
+}
+
+/* Body text in the regular weight: light strokes break up on phone screens. */
+.head-copy,
+.story-copy,
+.intro-copy-block p,
+.global-card p,
+.chapter-lead,
+.chapter-body,
+.venture-card p:not(.eyebrow),
+.lesson p,
+.story-panel-copy p:last-child,
+.newsletter-copy,
+.article-summary,
+.article-body li,
+.tile-desc,
+.tile-wall-copy,
+.journey-card p:not(.eyebrow),
+.service-card p,
+.process-steps p,
+.faq-answer p,
+.case-steps p,
+.case-review blockquote p {
+  font-weight: 400;
+}
