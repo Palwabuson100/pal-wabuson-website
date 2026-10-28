@@ -3924,3 +3924,42 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Introduction: eyebrow above both columns, heading and copy aligned at the top */
+.copy-intro .intro-eyebrow {
+  margin-bottom: clamp(18px, 2vw, 28px);
+}
+
+@media (min-width: 1101px) {
+  .copy-intro .intro-composition {
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 1100px) {
+  .copy-intro .intro-composition {
+    gap: 28px;
+  }
+}
+
+.copy-intro .story-title {
+  max-width: 15ch;
+}
+
+.copy-intro .story-title::first-line {
+  color: inherit;
+}
+
+.copy-intro .intro-accent {
+  color: var(--lime);
+}
+
+.copy-intro .intro-copy-block {
+  padding-top: 0.4em;
+  border-top: 0;
+}
+
+.copy-intro {
+  padding-bottom: clamp(56px, 6vw, 90px);
+}
