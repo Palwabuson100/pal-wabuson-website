@@ -1,0 +1,6 @@
+# Working files that must not be published on palwabuson.com
+.claude
+.superpowers
+docs
+HANDOVER.md
+*.py

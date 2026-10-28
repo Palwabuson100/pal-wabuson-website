@@ -1,6 +1,6 @@
 # Pal Wabuson
 
-> Pal Wabuson leads enterprise AI transformation and implementation: helping organisations move from AI experiments to AI that changes how work gets done, by redesigning workflows so people lead, AI assists and automation is used where it is safe, then measuring and scaling the result. He is an AI engineer in Nigeria and the founder of Unovia Technologies, an African technology company building practical AI products (Vera, Iris, Amber and Lana), and a TEDx speaker on artificial intelligence, entrepreneurship and the future of African business.
+> Pal Wabuson leads enterprise AI transformation and implementation: helping organisations move from AI experiments to AI that changes how work gets done, by redesigning workflows so people lead, AI assists and automation is used where it is safe, then measuring and scaling the result. He is an AI engineer in Nigeria and the founder of Unovia Technologies, an African technology company building practical AI products (Vera, Iris and Lana), and a TEDx speaker on artificial intelligence, entrepreneurship and the future of African business.
 
 Contact: hello@palwabuson.com
 LinkedIn: https://www.linkedin.com/in/pal-wabuson-948168234/
@@ -16,7 +16,6 @@ Company: https://unovia.ai
 
 - [Vera](https://vera.unovia.ai): AI recruitment: CV screening, live first-stage voice interviews and evidence-based reports.
 - [Iris](https://iris.unovia.ai): AI interview practice, CV improvement and job discovery.
-- [Amber](https://amber.unovia.ai): AI consultation agent for discovery calls and qualification.
 - [Lana](https://lana.unovia.ai): AI workspace management for coworking, gyms, studios and shortlets.
 
 ## Hire an AI engineer in Nigeria
@@ -32,7 +31,6 @@ Company: https://unovia.ai
 ## Products and essays
 
 - [Why Africa's next AI companies must build for real work](https://palwabuson.com/articles/unovia-technologies-ai-products-africa.html)
-- [Amber: AI customer support for African businesses](https://palwabuson.com/articles/amber-ai-customer-support-africa.html)
 - [Lana: AI workspace management](https://palwabuson.com/articles/lana-ai-workspace-management-africa.html)
 - [Iris: AI job interview simulation](https://palwabuson.com/articles/iris-ai-job-interview-simulation-africa.html)
 - [Vera: AI HR screening and live interviews](https://palwabuson.com/articles/vera-ai-hr-screening-live-interviews-africa.html)

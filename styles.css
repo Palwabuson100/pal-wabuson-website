@@ -4001,3 +4001,10 @@ img {
 .case-review blockquote p {
   font-weight: 400;
 }
+
+/* Three products (Lana, Vera, Iris): three columns from tablet width up. */
+@media (min-width: 761px) {
+  .featured-tiles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
