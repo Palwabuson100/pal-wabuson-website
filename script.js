@@ -1,10 +1,8 @@
 const talks = [
-  "The Future of Work in Africa",
   "Artificial Intelligence for Growing Businesses",
   "Reinvention and Career Transition",
   "Building Systems That Support Growth",
-  "Sales, Leadership and Human Behaviour",
-  "Creating Technology for African Markets"
+  "Sales, Leadership and Human Behaviour"
 ];
 
 const footerLinks = [

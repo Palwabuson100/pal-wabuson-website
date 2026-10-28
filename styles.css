@@ -3872,3 +3872,55 @@ img {
     border-top: 1px solid rgba(243, 240, 232, 0.14);
   }
 }
+
+
+/* Lana customer review under the product tiles */
+.product-review {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 44px);
+  align-items: center;
+  margin: clamp(40px, 5vw, 70px) 0 0;
+  padding: clamp(18px, 2vw, 26px);
+  border: 1px solid rgba(243, 240, 232, 0.14);
+  background: rgba(243, 240, 232, 0.03);
+}
+
+.product-review-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.product-review-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.product-review figcaption {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+
+.product-review figcaption strong {
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: clamp(28px, 2.6vw, 40px);
+  font-weight: 400;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.product-review figcaption span {
+  color: var(--muted-light);
+}
+
+@media (max-width: 900px) {
+  .product-review {
+    grid-template-columns: 1fr;
+  }
+}
