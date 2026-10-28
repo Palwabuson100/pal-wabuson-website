@@ -1,10 +1,22 @@
 # Pal Wabuson
 
-> Pal Wabuson is an AI engineer in Nigeria and the founder of Unovia Technologies, an African technology company building practical AI products (Amber, Lana, Iris and Vera). Pal designs, builds and deploys AI agents for businesses in Nigeria and across Africa, and is a TEDx speaker on artificial intelligence, entrepreneurship and the future of African business.
+> Pal Wabuson leads enterprise AI transformation and implementation: helping organisations move from AI experiments to AI that changes how work gets done, by redesigning workflows so people lead, AI assists and automation is used where it is safe, then measuring and scaling the result. He is an AI engineer in Nigeria and the founder of Unovia Technologies, an African technology company building practical AI products (Vera, Iris, Amber and Lana), and a TEDx speaker on artificial intelligence, entrepreneurship and the future of African business.
 
 Contact: hello@palwabuson.com
 LinkedIn: https://www.linkedin.com/in/pal-wabuson-948168234/
 Company: https://unovia.ai
+
+## Enterprise AI transformation
+
+- [Enterprise AI transformation](https://palwabuson.com/#enterprise): opportunity assessment, workflow redesign before technology, implementation with owners and success measures, and adoption across teams.
+- [Case study: 1159 Realty](https://palwabuson.com/#case-study): AI-assisted hiring redesigned at 1159 Realty. The first pilot narrowed 34 applicants to 4 human interviews; it became the HR team's standing practice (179 candidates, 66 interview reports) and was scaled, as Vera, to about 10 HR teams. Includes a review from the HR Manager.
+
+## Products
+
+- [Vera](https://vera.unovia.ai): AI recruitment: CV screening, live first-stage voice interviews and evidence-based reports.
+- [Iris](https://iris.unovia.ai): AI interview practice, CV improvement and job discovery.
+- [Amber](https://amber.unovia.ai): AI consultation agent for discovery calls and qualification.
+- [Lana](https://lana.unovia.ai): AI workspace management for coworking, gyms, studios and shortlets.
 
 ## Hire an AI engineer in Nigeria
 

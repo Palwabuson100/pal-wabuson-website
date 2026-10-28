@@ -3725,3 +3725,150 @@ img {
     width: 100%;
   }
 }
+
+
+/* Case study: 1159 Realty (enterprise AI transformation) */
+.case-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: start;
+}
+
+.case-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(243, 240, 232, 0.18);
+}
+
+.case-steps li {
+  display: grid;
+  gap: 8px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(243, 240, 232, 0.14);
+}
+
+.case-steps span {
+  color: var(--bronze);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.case-steps p {
+  margin: 0;
+  color: var(--muted-light);
+  font-family: "Spectral", Georgia, serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.case-side {
+  display: grid;
+  gap: 22px;
+}
+
+.case-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid rgba(243, 240, 232, 0.14);
+}
+
+.case-stats div {
+  display: grid;
+  gap: 8px;
+  padding: 20px 18px;
+}
+
+.case-stats div + div {
+  border-left: 1px solid rgba(243, 240, 232, 0.14);
+}
+
+.case-stats strong {
+  color: var(--lime);
+  font-family: var(--display);
+  font-size: clamp(38px, 3.6vw, 56px);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.case-stats span {
+  color: var(--muted-light);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.case-review {
+  margin: 0;
+  border: 1px solid rgba(243, 240, 232, 0.14);
+  background: rgba(243, 240, 232, 0.03);
+}
+
+.case-review video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  object-fit: cover;
+}
+
+.case-review blockquote {
+  margin: 0;
+  padding: 22px 22px 0;
+}
+
+.case-review blockquote p {
+  margin: 0 0 10px;
+  color: var(--muted-light);
+  font-family: "Spectral", Georgia, serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.case-review .case-review-lead {
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: clamp(30px, 2.8vw, 42px);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.case-review figcaption {
+  display: grid;
+  gap: 2px;
+  padding: 6px 22px 22px;
+}
+
+.case-review figcaption strong {
+  color: var(--paper);
+}
+
+.case-review figcaption span {
+  color: var(--muted-light);
+  font-size: 14px;
+}
+
+.case-side .button {
+  justify-self: start;
+}
+
+@media (max-width: 900px) {
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .case-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .case-stats div + div {
+    border-left: 0;
+    border-top: 1px solid rgba(243, 240, 232, 0.14);
+  }
+}

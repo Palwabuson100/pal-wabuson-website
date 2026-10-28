@@ -233,10 +233,10 @@ const roleSwap = document.getElementById("role-swap");
 
 if (roleSwap && !prefersReducedMotion.matches) {
   const roles = [
-    "AI Engineer",
-    "AI Agent Builder",
+    "Enterprise AI Transformation",
+    "AI Implementation",
     "Founder of Unovia Technologies",
-    "Entrepreneur",
+    "AI Engineer",
     "TEDx Speaker",
     "Convener, Lions Path Initiative"
   ];
